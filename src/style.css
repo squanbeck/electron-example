@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar-left {
+  height: 100%;
+  width: 55px;
+  position: fixed;
+  background-color: #111;
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid #888;
+}
+
+.navbar-right {
+  height: 100%;
+  width: 55px;
+  position: fixed;
+  background-color: #111;
+  padding-top: 20px;
+  top: 0;
+  right: 0;
+  border: 1px solid #888;
+}
+
+.main-right {
+  height: 100%;
+  margin-left: 55px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: #111;
+  color: #555;
+  border: 1px solid #888;
+}
+
+.main-left {
+  height: 100%;
+  margin-right: 55px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  background-color: #111;
+  color: #555;
+  border: 1px solid #888;
+}
+
+.icons-gray {
+  color: #444
+}

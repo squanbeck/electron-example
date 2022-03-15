@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Electron App</title>
+  <link href="..\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="..\node_modules\material-icons/iconfont/material-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar-left">
+    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span class="material-icons icons-gray">history_edu</span>
+    </button>
+    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span class="material-icons icons-gray">segment</span>
+    </button>
+    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <span class="material-icons icons-gray">groups</span>
+    </button>
+    <button class="btn" type="button" id="toggleNavbarRightLeft">
+      <span class="material-icons icons-gray">toggle_on</span>
+    </button>
+  </div>
+  <div class="main-right">
+    <p>
+      I am paragraph 1
+    </p>
+    <p>
+      I am paragraph 2
+    </p>
+  </div>
+
+  <!--Extra JS to allow jquery and other libraries to work properly in electron-->
+  <script>
+    if (typeof module === 'object') { window.module = module; module = undefined; } 
+  </script>
+
+  <script src="..\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="..\node_modules\jquery\dist\jquery.slim.min.js"
+    integrity="sha384-Qg00WFl9r0Xr6rUqNLv1ffTSSKEFFCDCKVyHZ+sVt8KuvG99nWw5RNvbhuKgif9z" crossorigin="anonymous"></script>
+
+  <script src="..\build\script.js" crossorigin="anonymous"></script>
+
+  <!--No longer need special setting of window.module-->
+  <script>
+    if (window.module) module = window.module;
+  </script>
+</body>
+
+</html>
