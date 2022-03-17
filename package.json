@@ -2,14 +2,13 @@
   "dependencies": {
     "@types/jquery": "^3.5.14",
     "bootstrap": "^5.1.3",
-    "electron": "^17.1.2",
     "jquery": "^3.6.0",
-    "material-icons": "^1.10.8",
-    "typescript": "^4.6.2"
+    "material-icons": "^1.10.8"
   },
   "scripts": {
-    "compile": "tsc",
-    "start": "npm run compile && electron build"
+    "compile": "tsc && sass src:build --no-source-map",
+    "copy-html": "copyfiles src/*.html build -u 1",
+    "start": "npm run compile && npm run copy-html && electron build"
   },
   "main": "build/index.js",
   "name": "electron-learning",
@@ -17,5 +16,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "electron": "^17.1.2",
+    "sass": "^1.49.9",
+    "typescript": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squanbeck/electron-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/squanbeck/electron-example/issues"
+  },
+  "homepage": "https://github.com/squanbeck/electron-example#readme",
   "description": ""
 }

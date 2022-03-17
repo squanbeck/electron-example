@@ -7,7 +7,7 @@ app.on('ready', () => {
         // width: 600,
         // height: 400
     });
-    const indexHTML = path.join(__dirname + '/../src/index.html');
+    const indexHTML = path.join(__dirname + '/index.html');
     win.webContents.openDevTools();
     win.loadFile(indexHTML).then(() => {
 

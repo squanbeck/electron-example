@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+%navbar {
+  height: 100%;
+  width: 55px;
+  position: fixed;
+  background-color: #111;
+  padding-top: 20px;
+  top: 0;
+  border: 1px solid #888;
+}
+
+.navbar-left {
+  @extend %navbar;
+  left: 0;
+}
+
+.navbar-right {
+  @extend %navbar;
+  right: 0;
+}
+
+%main {
+  height: 100%;
+  padding: 0px 10px;
+  background-color: #111;
+  color: #555;
+  border: 1px solid #888;
+}
+
+.main-right {
+  @extend %main;
+  margin-left: 55px; /* Same as the width of the sidenav */
+}
+
+.main-left {
+  @extend %main;
+  margin-right: 55px; /* Same as the width of the sidenav */
+}
+
+.icons-gray {
+  color: #444
+}
